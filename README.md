@@ -32,6 +32,32 @@ Install the project dependencies after activation:
 pip install -r requirements.txt
 ```
 
+## Run The ADK Agent
+
+After activating the virtual environment, start the agent with:
+
+```bash
+adk run firstagent
+```
+
+The agent uses the Ollama model from the `OLLAMA_MODEL` environment variable.
+If `OLLAMA_MODEL` is not set, it falls back to `ollama_chat/gemma4`.
+
+To check whether the model exists on your local machine, run:
+
+```bash
+ollama list
+```
+
+Compare the model name after `ollama_chat/` with the names in the list.
+For example, `ollama_chat/gemma4` means the local Ollama model should be `gemma4`.
+
+If your model does not appear in the list, pull it first. For example:
+
+```bash
+ollama pull gemma4
+```
+
 To check whether a package is installed, run:
 
 ```bash
