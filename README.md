@@ -32,6 +32,14 @@ Install the project dependencies after activation:
 pip install -r requirements.txt
 ```
 
+To check whether a package is installed, run:
+
+```bash
+pip show package_name
+```
+
+If the package is installed, `pip show` displays its details. If it is not installed, it returns no result.
+
 To leave the virtual environment, run:
 
 ```bash
